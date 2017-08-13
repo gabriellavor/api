@@ -42,9 +42,9 @@ class ComposerStaticInit5e46192826cb4408eafe57953a1b310f
         array (
             'FastRoute\\' => 10,
         ),
-        'C' => 
+        'A' => 
         array (
-            'Cliente\\' => 8,
+            'Api\\' => 4,
         ),
     );
 
@@ -109,9 +109,9 @@ class ComposerStaticInit5e46192826cb4408eafe57953a1b310f
         array (
             0 => __DIR__ . '/..' . '/nikic/fast-route/src',
         ),
-        'Cliente\\' => 
+        'Api\\' => 
         array (
-            0 => __DIR__ . '/../..' . '/app/Cliente',
+            0 => __DIR__ . '/../..' . '/app/Api',
         ),
     );
 
@@ -126,8 +126,8 @@ class ComposerStaticInit5e46192826cb4408eafe57953a1b310f
     );
 
     public static $classMap = array (
-        'Cliente\\Controllers\\ClienteController' => __DIR__ . '/../..' . '/app/Cliente/Controllers/ClienteController.php',
-        'Cliente\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Cliente/Controllers/Controller.php',
+        'Api\\Controllers\\ClienteController' => __DIR__ . '/../..' . '/app/Api/Controllers/ClienteController.php',
+        'Api\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Api/Controllers/Controller.php',
         'FastRoute\\BadRouteException' => __DIR__ . '/..' . '/nikic/fast-route/src/BadRouteException.php',
         'FastRoute\\DataGenerator' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator.php',
         'FastRoute\\DataGenerator\\CharCountBased' => __DIR__ . '/..' . '/nikic/fast-route/src/DataGenerator/CharCountBased.php',

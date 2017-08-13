@@ -1,5 +1,5 @@
 <?php
-	namespace Cliente\Controllers;
+	namespace Api\Controllers;
 
 	abstract class Controller{
 

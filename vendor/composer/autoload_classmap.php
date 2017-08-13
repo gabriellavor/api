@@ -6,8 +6,8 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname($vendorDir);
 
 return array(
-    'Cliente\\Controllers\\ClienteController' => $baseDir . '/app/Cliente/Controllers/ClienteController.php',
-    'Cliente\\Controllers\\Controller' => $baseDir . '/app/Cliente/Controllers/Controller.php',
+    'Api\\Controllers\\ClienteController' => $baseDir . '/app/Api/Controllers/ClienteController.php',
+    'Api\\Controllers\\Controller' => $baseDir . '/app/Api/Controllers/Controller.php',
     'FastRoute\\BadRouteException' => $vendorDir . '/nikic/fast-route/src/BadRouteException.php',
     'FastRoute\\DataGenerator' => $vendorDir . '/nikic/fast-route/src/DataGenerator.php',
     'FastRoute\\DataGenerator\\CharCountBased' => $vendorDir . '/nikic/fast-route/src/DataGenerator/CharCountBased.php',

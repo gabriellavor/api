@@ -48,3 +48,5 @@
 [2017-08-06 11:34:17] my_logger.INFO: Ticket list :[{"id":"1","nome":"Gabriel"}] [] []
 [2017-08-06 11:34:24] my_logger.INFO: Ticket list :[{"id":"1","nome":"Gabriel"}] [] []
 [2017-08-06 11:34:46] my_logger.INFO: Ticket list :[{"id":"1","nome":"Gabriel"}] [] []
+[2017-08-13 17:39:49] my_logger.INFO: Ticket list :[{"id":"1","nome":"Gabriel"},{"id":"2","nome":"Lavor"}] [] []
+[2017-08-13 18:50:17] my_logger.INFO: Ticket list :[{"id":"1","nome":"Gabriel"}] [] []
