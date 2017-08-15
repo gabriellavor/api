@@ -40,17 +40,12 @@ $container['CategoriaController'] = function($container) use ($app){
 $app->get('/categoria','CategoriaController:listaCategorias')->setName('categoria');
 $app->get('/categoria/{id}','CategoriaController:listaCategoria')->setName('categoria');
 
-$app->get('/categoriaxxx', function (Request $request, Response $response) use ($app) {
-    //Content Type JSON Cross Domain JSON
-    $newResponse = $response->withHeader('Content-type', 'application/json')
-            ->withHeader('Access-Control-Allow-Origin', '*')
-            ->withHeader('Access-Control-Allow-Headers', 'X-Requested-With, Content-Type, Accept, Origin, Authorization')
-            ->withHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE, OPTIONS');
-    //Return Eventos for today
-    //$data = CategoriaController::listaCategorias();
-    //Response Busca Hoje
-    $data = json_encode(array('jfjf' => 'nff'));
-    return $newResponse->withJson($data, 201);
-});
+//Produtos
+$container['ProdutoController'] = function($container) use ($app){
+	return new Api\Controllers\ProdutoController($container);
+};
+
+$app->get('/produto','ProdutoController:listaProdutos')->setName('produto');
+$app->get('/produto/{id}','ProdutoController:listaProduto')->setName('produto');
 
 $app->run();
