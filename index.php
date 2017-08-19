@@ -47,5 +47,6 @@ $container['ProdutoController'] = function($container) use ($app){
 
 $app->get('/produto','ProdutoController:listaProdutos')->setName('produto');
 $app->get('/produto/{id}','ProdutoController:listaProduto')->setName('produto');
+$app->get('/produto/busca/{descricao}','ProdutoController:busca')->setName('produto');
 
 $app->run();
